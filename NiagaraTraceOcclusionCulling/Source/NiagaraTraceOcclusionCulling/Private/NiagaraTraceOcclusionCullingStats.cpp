@@ -1,0 +1,13 @@
+// Demo -- Not for distribution, all rights reserved
+
+#include "NiagaraTraceOcclusionCullingStats.h"
+
+DEFINE_STAT(STAT_NiagaraTraceOcclusionCulling_Tick);
+DEFINE_STAT(STAT_NiagaraTraceOcclusionCulling_ProcessRegistered);
+DEFINE_STAT(STAT_NiagaraTraceOcclusionCulling_DispatchTraces);
+DEFINE_STAT(STAT_NiagaraTraceOcclusionCulling_UpdateComponents);
+DEFINE_STAT(STAT_NiagaraTraceOcclusionCulling_GetLineTraceEndpoints);
+
+DEFINE_STAT(STAT_NiagaraTraceOcclusionCulling_ActiveTraces);
+DEFINE_STAT(STAT_NiagaraTraceOcclusionCulling_OccludedComponents);
+DEFINE_STAT(STAT_NiagaraTraceOcclusionCulling_ManagedComponents);

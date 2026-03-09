@@ -1,0 +1,18 @@
+// Demo -- Not for distribution, all rights reserved
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "Stats/Stats.h"
+
+DECLARE_STATS_GROUP(TEXT("NiagaraTraceOcclusionCulling"), STATGROUP_NiagaraTraceOcclusionCulling, STATCAT_Advanced);
+
+DECLARE_CYCLE_STAT_EXTERN(TEXT("Tick"), STAT_NiagaraTraceOcclusionCulling_Tick, STATGROUP_NiagaraTraceOcclusionCulling, NIAGARATRACEOCCLUSIONCULLING_API);
+DECLARE_CYCLE_STAT_EXTERN(TEXT("Process Registered Components"), STAT_NiagaraTraceOcclusionCulling_ProcessRegistered, STATGROUP_NiagaraTraceOcclusionCulling, NIAGARATRACEOCCLUSIONCULLING_API);
+DECLARE_CYCLE_STAT_EXTERN(TEXT("Dispatch Line Traces"), STAT_NiagaraTraceOcclusionCulling_DispatchTraces, STATGROUP_NiagaraTraceOcclusionCulling, NIAGARATRACEOCCLUSIONCULLING_API);
+DECLARE_CYCLE_STAT_EXTERN(TEXT("Update Components"), STAT_NiagaraTraceOcclusionCulling_UpdateComponents, STATGROUP_NiagaraTraceOcclusionCulling, NIAGARATRACEOCCLUSIONCULLING_API);
+DECLARE_CYCLE_STAT_EXTERN(TEXT("Get Line Trace Endpoints"), STAT_NiagaraTraceOcclusionCulling_GetLineTraceEndpoints, STATGROUP_NiagaraTraceOcclusionCulling, NIAGARATRACEOCCLUSIONCULLING_API);
+
+DECLARE_DWORD_COUNTER_STAT_EXTERN(TEXT("Managed Components"), STAT_NiagaraTraceOcclusionCulling_ManagedComponents, STATGROUP_NiagaraTraceOcclusionCulling, NIAGARATRACEOCCLUSIONCULLING_API);
+DECLARE_DWORD_COUNTER_STAT_EXTERN(TEXT("Occluded Components"), STAT_NiagaraTraceOcclusionCulling_OccludedComponents, STATGROUP_NiagaraTraceOcclusionCulling, NIAGARATRACEOCCLUSIONCULLING_API);
+DECLARE_DWORD_ACCUMULATOR_STAT_EXTERN(TEXT("Active Traces"), STAT_NiagaraTraceOcclusionCulling_ActiveTraces, STATGROUP_NiagaraTraceOcclusionCulling, NIAGARATRACEOCCLUSIONCULLING_API);
